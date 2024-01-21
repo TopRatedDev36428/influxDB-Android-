@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <integer name="default_write_batch_size">100</integer>
+  <integer name="default_write_at_least_every">300</integer>
+  <integer name="default_write_at_most_every">20</integer>
+</resources>

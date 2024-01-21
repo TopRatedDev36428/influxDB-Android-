@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--
+  REQUIRED: Influx DB name.
+  -->
+  <string name="db_name">metrics</string>
+  <!--
+  REQUIRED: Influx DB URL.
+  -->
+  <string name="url">https://influxdb.test.com</string>
+  <!--
+  REQUIRED: Influx DB user name.
+  -->
+  <string name="user">testuser</string>
+  <!--
+  REQUIRED: Influx DB password.
+  -->
+  <string name="password">testpassword</string>
+  <!--
+  OPTIONAL: Will wait until this many measurements are queued before sending,
+  except when max write delay is exceeded (see below). Default value is 100.
+  -->
+  <integer name="write_batch_size">10</integer>
+  <!--
+  OPTIONAL: Send values to server at least every this number of seconds, irrespective of batch size.
+  Default value is 300 (5 minutes).
+  -->
+  <integer name="write_at_least_every">60</integer>
+  <!--
+  OPTIONAL: Send values to server at most every this number of seconds, irrespective of batch size.
+  Default value is 20.
+  -->
+  <integer name="write_at_most_every">30</integer>
+
+</resources>
